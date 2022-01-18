@@ -98,7 +98,7 @@ Lastly, with javascript. I first defined the menu id, then on the toggleMenu() m
 
 I am using arrow functions here, if you are not used to them, you could use the function declaration or read something about them. And that's it, as always you can have more fun of course with more css for fancy styling plus adding an animation.
 
-Full Source Code: ![Github]https://github.com/CharlesKasasira/Articles-Code/tree/master/how-to-click-outside-to-close-in-javascript
+Full Source Code: ![Github](https://github.com/CharlesKasasira/Articles-Code/tree/master/how-to-click-outside-to-close-in-javascript)
 
 What could I learn from this small feature?. Small as it is, I got to refresh my knowledge of the event.stopPropagation() method. ![MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) - The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.
 
