@@ -1,6 +1,6 @@
 ## HOW TO: Click outside to close in Javascript
 
-Hey, Charles Kasasira here, time to time, I write 2-minutes packaged articles on *how to* do some cool stuff in web development, and in this short "Do It Yourself", I would like to show you too can write a short piece of code using HTML, CSS and vanilla javascript to close a modal or any context by clicking outside, just like twitter's context menu.
+Hey, Charles Kasasira here, time to time, I write 2-minutes packaged articles on *how to* do some cool stuff in web development, and in this short "Do It Yourself", I would like to show you how you too can write a short piece of code using HTML, CSS and vanilla javascript to close a modal or any context by clicking outside, just like twitter's context menu.
 
 
 ![Outside.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1642325857110/dlkQ_bPN7b.png)
@@ -8,7 +8,7 @@ Hey, Charles Kasasira here, time to time, I write 2-minutes packaged articles on
 
 This might be important in some instances, like
 - When you have to implement your own modal.
-- I just mentioned menu's like twitter's context menu.
+- When implementing context menus like twitter's context menu.
 - It's good UX, that you can click-to-open something, and then not only be able to click that same thing to close it, but click outside to close as well.
 
 
@@ -17,13 +17,13 @@ This might be important in some instances, like
 ### HTML: the structure.
 
 ```html
-    <button onclick="toggleDropdown()" class="btn">
-        Click to show 
+    <button onclick="toggleMenu()" class="btn">
+        Click to Show
     </button>
-    <ul id="myDropdown">
-        <li class="dropdown-item">Edit</li>
-        <li class="dropdown-item">Delete</li>
-        <li class="dropdown-item">Close</li> 
+    <ul id="menu">
+        <li class="menu-item">Edit</li>
+        <li class="menu-item">Delete</li>
+        <li class="menu-item">Close</li> 
     </ul>
 ```
 
@@ -47,7 +47,7 @@ For the skeleton of the project, all I needed was a button that will toggle our 
     background-color: #148;
 }
 
-#myDropdown{
+#menu{
     display: none;
     position: absolute;
     z-index: 1000;
@@ -64,11 +64,11 @@ For the skeleton of the project, all I needed was a button that will toggle our 
     border-radius: .25rem;
 }
   
-#myDropdown.show {
+#menu.show {
     display: block;
 }
 
-.dropdown-item{
+.menu-item{
     padding: 8px 20px;
     cursor: pointer;
 }  
@@ -80,23 +80,25 @@ Went with close to the minimum styles to design the button and #myDropdown for t
 ### JS: the behavior
 
 ```js
-const myDropdown = document.getElementById('myDropdown');
+const menu = document.getElementById("menu");
 
-const toggleDropdown = () => myDropdown.classList.toggle("show");
+const toggleMenu = () => menu.classList.toggle("show");
 
 window.onclick = (event) => {
     if (!event.target.matches('.btn')) {
-        if(myDropdown.classList.contains('show')){
-            myDropdown.classList.remove('show')
+        if(menu.classList.contains('show')){
+            menu.classList.remove('show')
         }
     }
 }
 
-myDropdown.addEventListener('click', (event) => event.stopPropagation());
+menu.addEventListener('click', (event) => event.stopPropagation());
 ```
-Lastly, with javascript. I first defined the myDropdown id, then on the toggleDropdown() method which I call on click of the button, I toggle, (add or remove) the show class from the menu.
+Lastly, with javascript. I first defined the menu id, then on the toggleMenu() method which I call on click of the button, I toggle, (add or remove) the show class from the menu.
 
 I am using arrow functions here, if you are not used to them, you could use the function declaration or read something about them. And that's it, as always you can have more fun of course with more css for fancy styling plus adding an animation.
+
+Full Source Code: ![Github]https://github.com/CharlesKasasira/Articles-Code/tree/master/how-to-click-outside-to-close-in-javascript
 
 What could I learn from this small feature?. Small as it is, I got to refresh my knowledge of the event.stopPropagation() method. ![MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) - The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.
 
