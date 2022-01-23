@@ -2,6 +2,9 @@
 
 JavaScript Arrays are a very flexible data structure and are used as lists, stacks, queues, etc. Every value in an array is associated with a numeric index starting with 0. Here is everything you need to get started with arrays
 
+
+![cheatsheet.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1642920690863/4CDkV-oIs.png)
+
 ## Using Arrays
 
 How to create an array.
