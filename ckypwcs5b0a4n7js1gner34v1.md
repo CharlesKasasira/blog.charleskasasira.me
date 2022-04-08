@@ -1,6 +1,7 @@
 ## Cheat sheet: Arrays in JavaScript
 
-![cheatsheet.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1642920690863/4CDkV-oIs.png)
+
+![jsarrays.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1649419804705/tt_xrCSH7.png)
 
 JavaScript Arrays are a very flexible data structure and are used as lists, stacks, queues, etc. Every value in an array is associated with a numeric index starting with 0. Here is everything you need to get started with arrays
 
