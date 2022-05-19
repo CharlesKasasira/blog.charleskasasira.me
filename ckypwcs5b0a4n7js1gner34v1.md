@@ -15,7 +15,7 @@ const arrayName = [1, 2, 3, 4]
 const arrayName = new Array.from("foo")
 ```
 
-How to reading from an array
+How to read from an array
 
 ```js
 const arrayName = [1, 2, 3, 4]
