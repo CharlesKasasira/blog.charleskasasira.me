@@ -1,6 +1,6 @@
 # Blog
 
-This is a repository for the different I posts shared on hashnode [kasasira.hashnode.dev](https://kasasira.hashnode.dev).
+This is a repository for the different posts I shared on hashnode [kasasira.hashnode.dev](https://kasasira.hashnode.dev).
 
 
 | Thumbnail | Title | Link |
