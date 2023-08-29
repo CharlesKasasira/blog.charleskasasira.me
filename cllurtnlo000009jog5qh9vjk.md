@@ -3,7 +3,7 @@ title: "Ideas.txt"
 datePublished: Mon Aug 28 2023 11:03:13 GMT+0000 (Coordinated Universal Time)
 cuid: cllurtnlo000009jog5qh9vjk
 slug: ideastxt
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1693221437983/8959b73b-b11c-47e3-b0f8-6ff1ac7fe32d.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1693328271470/278a0435-224a-4842-88a6-6adc33c6f054.png
 
 ---
 
